@@ -1,10 +1,3 @@
-/**
-* Template Name: Appland - v2.0.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Font
 --------------------------------------------------------------*/
@@ -226,14 +219,14 @@ li {
 # Navigation Menu
 --------------------------------------------------------------*/
 
-.nav__page {
+.nav-page {
   position: absolute;
   top: 254px;
   left: 36.5px;
   font-size: 16px;
   transform: rotate(90deg);
 }
-.navbar .navbar__btn {
+.navbar .navbar-btn {
   display: block;
   width: 32px;
   position: fixed;
@@ -241,7 +234,7 @@ li {
   left: 50px;
   z-index: 99;
 }
-.navbar .navbar__btn span {
+.navbar .navbar-btn span {
   display: block;
   width: 100%;
   height: 3px;
@@ -269,7 +262,7 @@ li {
   width: 100%;
 }
 
-.nav__list {
+.nav-list {
   position: fixed;
   top: 0;
   left: 0;
@@ -513,7 +506,7 @@ li {
 }
 
 /*--------------------------------------------------------------
-# Main Section
+# Main 
 --------------------------------------------------------------*/
 .main {
   background-color: #f8f6f5;
@@ -522,7 +515,7 @@ li {
   font-size: 2.25rem;
   color: #222e55;
 }
-.main__title {
+.main-title {
   display: block;
   font-size: 36px;
   font-weight: 600;
@@ -531,38 +524,38 @@ li {
   margin-bottom: 38px;
   line-height: 1;
 }
-.main__name {
+.main-name {
   font-size: 36px;
   color: #f49da0;
   font-weight: 100;
   line-height: 1;
   letter-spacing: -2.77px;
 }
-.main__info h1 {
+.main-info h1 {
   margin: 75px auto;
   line-height: 1;
   font-size: 84px;
   font-weight: 900;
 }
-.main__info p {
+.main-info p {
   font-size: 13px;
   color: #222e55;
   margin-bottom: 6px;
   display: block;
 }
-.main__info p span {
+.main-info p span {
   font-weight: 600;
 }
-.main__info p a {
+.main-info p a {
   color: #222e55;
 }
-.main__link {
+.main-link {
   display: block;
   margin-top: 100px;
   color: #222e55;
   font-size: 26px;
 }
-.main__link img {
+.main-link img {
   margin-left: 24px;
 }
 @media (min-width: 992px) {
@@ -570,4 +563,222 @@ li {
     height: 100vh;
     min-height: 40rem;
   }
+}
+
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+.portfolio-container {
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+}
+.carousel {
+  width: 100%;
+}
+.carousel-inner {
+  height: 650px;
+}
+.carousel-item {
+  width: 100%;
+  height: 90%;
+}
+.carousel-caption {
+  margin-right: auto;
+  text-align: left;
+  color: rgba(35, 35, 35, 0.5);
+  left: 0;
+  right: unset;
+  top: 0;
+}
+.carousel-item h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 43px;
+}
+.carousel-item .item-info {
+  font-size: 28px;
+  font-family: "NanumSquare";
+  margin-bottom: 10px;
+}
+.carousel-item .item-info-en {
+  font-size: 24px;
+  font-weight: 300;
+}
+.carousel-item p.bar {
+  display: block;
+  width: 41px;
+  height: 3px;
+  background-color: #3e84b6;
+  background-color: #222e55;
+  margin: 42px 0 25px;
+}
+.carousel-item span {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.carousel-item .item-link {
+  position: absolute;
+  bottom: 0;
+}
+.carousel-item .item-link a {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(35, 35, 35, 0.5);
+}
+.carousel-item .item-link a:hover {
+  color: #3e84b6;
+  color: #222e55;
+}
+.carousel-item .item-link a:last-child {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.carousel-item img {
+  width: 80%;
+  max-width: 800px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 122px;
+}
+
+.carousel-btns {
+  margin-right: auto;
+  display: flex;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+  display: flex;
+  width: 20px;
+  opacity: 1;
+}
+.carousel .line {
+  display: flex;
+  width: 1px;
+  height: 23px;
+  background-color: #b8b8b8;
+  margin: 0 26.5px;
+}
+
+.carousel-indicators {
+  display: block;
+  left: unset;
+  bottom: unset;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+.carousel-indicators li {
+  position: relative;
+  width: 26px;
+  height: 1.5px;
+  background-color: #191919;
+  flex: none;
+  margin: 0;
+  margin-left: auto;
+  text-indent: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  opacity: 1;
+}
+.carousel-indicators li:before {
+  position: absolute;
+  right: 74px;
+  top: -14px;
+  display: none;
+  font-size: 28px;
+  font-weight: 700;
+  color: #232323;
+  clear: both;
+  line-height: 1;
+}
+.carousel-indicators li:nth-child(1):before {
+  content: "01";
+}
+.carousel-indicators li:nth-child(2):before {
+  content: "02";
+}
+.carousel-indicators li:nth-child(3):before {
+  content: "03";
+}
+.carousel-indicators li:nth-child(4):before {
+  content: "04";
+}
+.carousel-indicators li:nth-child(5):before {
+  content: "05";
+}
+.carousel-indicators li:nth-child(6):before {
+  content: "06";
+}
+.carousel-indicators li:nth-child(7):before {
+  content: "07";
+}
+.carousel-indicators .active {
+  width: 52px;
+}
+.carousel-indicators .active:before {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# profile
+--------------------------------------------------------------*/
+
+.profile-container h1 {
+  font-size: 45px;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  color: #232323;
+  margin-bottom: 75px;
+}
+.profile-container .row {
+  justify-content: space-between !important;
+}
+.info-container h2 {
+  font-size: 34px;
+  font-family: "NanumSquare";
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.info-container span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 58px;
+}
+.info-container h4 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+.info-content {
+  margin-bottom: 84px;
+}
+.info-title {
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+.info:nth-child(5) {
+  margin-bottom: 89px;
+}
+.info .period {
+  flex: 1 39px;
+  color: #696969;
+}
+.info .company {
+  flex: 2;
+  color: #232323;
 }
