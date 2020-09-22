@@ -1,1 +1,1 @@
-# Front-end Developer SEUNGHEE Portfolio
+# Front Developer SEUNGHEE Portfolio

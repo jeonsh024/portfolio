@@ -98,4 +98,31 @@
     duration: 800,
     easing: "ease-in-out",
   });
+
+  // menu
+  var isplay = true;
+  $(".navbar-btn").on("click", function () {
+    if (isplay) {
+      $(".navbar-btn span:first-child").css({
+        transform: "rotate(45deg)",
+        transformOrigin: "left",
+      });
+      $(".navbar-btn span:last-child").css({
+        transform: "rotate(-45deg) translate(-3px, -3px)",
+        transformOrigin: "center",
+      });
+      $(".nav-list-wrap").css({ visibility: "visible", opacity: "1" });
+    } else {
+      $(".navbar-btn span:first-child").css({
+        transform: "rotate(0deg)",
+        transformOrigin: "left",
+      });
+      $(".navbar-btn span:last-child").css({
+        transform: "none",
+        transformOrigin: "center",
+      });
+      $(".nav-list-wrap").css({ visibility: "hidden", opacity: "1" });
+    }
+    isplay = !isplay;
+  });
 })(jQuery);
